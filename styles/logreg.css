@@ -1,0 +1,89 @@
+.logreg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+.logreg-box {
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  height: fit-content;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border: 2px solid #01283d;
+  box-shadow: 7px 7px 0 0 #01283d;
+}
+.logreg-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 100%;
+  color: #01283d;
+  border-bottom: 1px solid #01283d;
+  padding-bottom: 0.5rem;
+  user-select: none;
+}
+.entry-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0.5rem 0;
+  gap: 0.5rem;
+}
+.input-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #01283d;
+  background-color: whitesmoke;
+  width: fit-content;
+  padding: 0.05rem 0.25rem;
+  transform: translate(0.6rem, 0.6rem);
+  user-select: none;
+}
+.text-input {
+  height: 3rem;
+  width: 100%;
+  outline: none;
+  border: 2px solid #01283d;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  color: #01283d;
+  background-color: whitesmoke;
+}
+.submit-button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: fit-content;
+  color: #01283d;
+  background-color: transparent;
+  padding: 0.6rem 1rem;
+  border: 2px solid #01283d;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.submit-button:hover {
+  background-color: #01283d;
+  color: whitesmoke;
+}
+.error-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0.2rem 0;
+  gap: 0.2rem;
+}
+.error-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #b8151c;
+}

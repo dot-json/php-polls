@@ -1,0 +1,102 @@
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  color: #01283d;
+  user-select: none;
+  margin: 2.5rem 0 1rem 0;
+  text-transform: uppercase;
+}
+.undertitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #01283d;
+  user-select: none;
+  margin-bottom: 2rem;
+}
+.poll-container {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 25rem;
+  max-width: 38rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  gap: 2rem;
+}
+.poll-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding: 0.2rem 0.5rem;
+  background-color: whitesmoke;
+  border: 2px solid #01283d;
+  box-shadow: 4px 4px 0 0 #01283d;
+}
+.poll-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #01283d;
+  width: 100%;
+  padding: 0.5rem 0 0.8rem 0;
+}
+.poll-form {
+  height: fit-content;
+  width: 100%;
+}
+.poll-date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  padding: 0.45rem 0.2rem 0.3rem 0.2rem;
+}
+.poll-date {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #01283d;
+}
+.poll-button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 100%;
+  color: #01283d;
+  background-color: transparent;
+  padding: 0.6rem 1rem;
+  border: 2px solid #01283d;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.poll-button:hover {
+  background-color: #01283d;
+  color: white;
+}
+.poll-button:disabled {
+  color: #01283d80;
+  border: 2px solid #01283d80;
+}
+.poll-button:disabled:hover {
+  background-color: transparent;
+  color: #01283d80;
+  cursor: default;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .undertitle {
+    font-size: 1rem;
+  }
+  .poll-title {
+    font-size: 1.2rem;
+  }
+}

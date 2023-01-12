@@ -1,0 +1,23 @@
+[
+  {
+    "uid": 1,
+    "username": "admin",
+    "email": "admin@polls.com",
+    "password": "password1",
+    "isAdmin": true
+  },
+  {
+    "uid": 2,
+    "username": "user1",
+    "email": "u1@polls.com",
+    "password": "password2",
+    "isAdmin": false
+  },
+  {
+    "uid": 3,
+    "username": "user2",
+    "email": "u2@polls.com",
+    "password": "password3",
+    "isAdmin": false
+  }
+]

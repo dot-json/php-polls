@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "Szeretnéd-e, hogy legyen INGYEN Pöttyös automata a Lágymányoson?",
+    "options": ["igen", "nem"],
+    "isMultiple": false,
+    "createdAt": "2022-12-04",
+    "deadlineAt": "2022-12-12",
+    "answers": { "igen": 2, "nem": 0 },
+    "voted": ["uid1", "uid2"]
+  },
+  {
+    "id": 2,
+    "question": "Miket tartalmazzon a Pöttyös automata?",
+    "options": [
+      "Klasszikus Túró Rudi",
+      "Karamellás Guru",
+      "Tejszelet",
+      "Fitness Rudi"
+    ],
+    "isMultiple": true,
+    "createdAt": "2022-12-05",
+    "deadlineAt": "2024-12-13",
+    "answers": {
+      "Klasszikus Túró Rudi": 3,
+      "Karamellás Guru": 3,
+      "Tejszelet": 3,
+      "Fitness Rudi": 2
+    },
+    "voted": ["uid1", "uid2", "uid3"]
+  }
+]

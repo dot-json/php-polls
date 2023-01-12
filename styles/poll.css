@@ -1,0 +1,159 @@
+.poll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+.poll-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  min-width: 25rem;
+  max-width: 45rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border: 2px solid #01283d;
+  box-shadow: 6px 6px 0 0 #01283d;
+}
+.poll-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #01283d;
+  width: 100%;
+  padding: 0 0 0.7rem 0;
+  border-bottom: 1px solid #01283d;
+}
+.poll-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: italic;
+  color: #01283d;
+}
+.poll-date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  padding: 0.7rem 0rem 0rem 0rem;
+  border-top: 1px solid #01283d;
+}
+.poll-date {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #01283d;
+}
+.poll-action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+  padding: 1rem 0.5rem 1.5rem 0.5rem;
+  gap: 1rem;
+}
+.poll-option-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1.75rem;
+  width: 100%;
+  gap: 0.5rem;
+}
+.poll-option-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #01283d;
+  user-select: none;
+}
+input[type="radio"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  color: #01283d;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #01283d;
+}
+input[type="radio"]::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: #01283d;
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+input[type="radio"]:disabled {
+  border: 2px solid #01283d91;
+}
+input[type="radio"]:disabled:checked::before {
+  background-color: #01283d91;
+}
+input[type="checkbox"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  color: #01283d;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #01283d;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: #01283d;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+input[type="checkbox"]:disabled {
+  border: 2px solid #01283d91;
+}
+input[type="checkbox"]:disabled:checked::before {
+  background-color: #01283d91;
+}
+.poll-submit-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+.poll-submit-result {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  user-select: none;
+}
+.poll-button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #01283d;
+  background-color: transparent;
+  padding: 0.6rem 1rem;
+  border: 3px solid #01283d;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.poll-button:hover {
+  background-color: #01283d;
+  color: white;
+}
