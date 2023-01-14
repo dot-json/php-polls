@@ -105,6 +105,8 @@
   color: #01283d;
   background-color: transparent;
   padding: 0.6rem 1rem;
+  text-decoration: none;
+  text-align: center;
   border: 2px solid #01283d;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 }
@@ -126,17 +128,48 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
-  width: 100%;
+  width: 50%;
   color: #a70000;
   background-color: transparent;
   margin-top: 0.5rem;
   padding: 0.6rem 1rem;
   border: 2px solid #a70000;
+  text-decoration: none;
+  text-align: center;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 }
 .poll-delete-button:hover {
   background-color: #a70000;
   color: white;
+}
+.poll-modify-button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 50%;
+  color: #01283d;
+  background-color: transparent;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #01283d;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.poll-modify-button:hover {
+  background-color: #01283d;
+  color: white;
+}
+.poll-modifiers-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  border-top: 2px solid #01283d;
 }
 .poll-result-title {
   font-family: "Inter", sans-serif;

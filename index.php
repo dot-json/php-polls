@@ -59,7 +59,6 @@
         </div>     
     </nav>
     <main class="pagewrapper">
-        
         <h1 class="title">Szavazások</h1>
         <h2 class="undertitle"><i>"Ezen az oldalon szavazunk dolgokról..."</i></h2>
         <?php if (isset($_SESSION["username"]) && $_SESSION["isAdmin"] == true): ?>
@@ -69,15 +68,12 @@
             <?php foreach($active_polls as $poll): ?>
                 <div class="poll-box">
                     <span class="poll-title"><span>#<?=$poll["id"]?> - </span><?=$poll["question"]?></span>
-                    <form class="poll-form" action=<?php if (isset($_SESSION["username"])) { echo "poll.php"; } else { echo "login.php"; }?> method="get" novalidate>
-                        <input type="hidden" name="pollid" value=<?=$poll["id"]?>>
-                        <input class="poll-button" type="submit" value=<?php if ($uid != 0 && array_key_exists("voted", $poll) && array_key_exists($uid, $poll["voted"])) { echo 'Szavazat&nbsp;frissítése'; } else { echo "Szavazás"; }?> > 
-                    </form>
+                    <a class="poll-button" href=<?php if (isset($_SESSION["username"])) { echo 'poll.php?pollid=' . $poll["id"]; } else { echo "login.php"; }?>><?php if ($uid != 0 && array_key_exists("voted", $poll) && array_key_exists($uid, $poll["voted"])) { echo 'Szavazat frissítése'; } else { echo "Szavazás"; }?></a>
                     <?php if (isset($_SESSION["username"]) && $_SESSION["isAdmin"] == true): ?>
-                        <form class="poll-form" action="delete-poll.php" method="post" novalidate>
-                            <input type="hidden" name="pollid" value=<?=$poll["id"]?>>
-                            <input class="poll-delete-button" type="submit" value="Törlés" > 
-                        </form>
+                        <div class="poll-modifiers-wrapper">
+                            <a class="poll-modify-button" href="modify-poll.php?pollid=<?=$poll["id"]?>">Módosítás</a>
+                            <a class="poll-delete-button" href="delete-poll.php?pollid=<?=$poll["id"]?>">Törlés</a>
+                        </div>
                     <?php endif?>                 
                     <div class="poll-date-container">
                         <span class="poll-date">Létrehozva: <?=$poll["createdAt"]?></span>
@@ -100,12 +96,8 @@
                             <?php endforeach?>
                         </ol>
                     </div>   
-
                     <?php if (isset($_SESSION["username"]) && $_SESSION["isAdmin"] == true): ?>
-                        <form class="poll-form" action="delete-poll.php" method="post" novalidate>
-                            <input type="hidden" name="pollid" value=<?=$poll["id"]?>>
-                            <input class="poll-delete-button" type="submit" value="Törlés" > 
-                        </form>
+                        <a style="width: 100%;" class="poll-delete-button" href="delete-poll.php?pollid=<?=$poll["id"]?>">Törlés</a>
                     <?php endif?>                 
                     <div class="poll-date-container">
                         <span class="poll-date">Létrehozva: <?=$poll["createdAt"]?></span>

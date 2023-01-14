@@ -1,56 +1,74 @@
 [
-  {
-    "id": 1,
-    "question": "Szeretn\u00e9d-e, hogy legyen INGYEN P\u00f6tty\u00f6s automata a L\u00e1gym\u00e1nyoson?",
-    "options": ["igen", "nem"],
-    "isMultiple": false,
-    "createdAt": "2022-12-04",
-    "deadlineAt": "2022-12-12",
-    "answers": {
-      "igen": 2,
-      "nem": 0
+    {
+        "id": 1,
+        "question": "Szeretn\u00e9d-e, hogy legyen INGYEN P\u00f6tty\u00f6s automata a L\u00e1gym\u00e1nyoson?",
+        "options": [
+            "igen",
+            "nem"
+        ],
+        "isMultiple": false,
+        "createdAt": "2022-12-04",
+        "deadlineAt": "2022-12-12",
+        "answers": {
+            "igen": 2,
+            "nem": 0
+        },
+        "voted": {
+            "1": "igen",
+            "2": "igen"
+        }
     },
-    "voted": {
-      "1": "igen",
-      "2": "igen"
-    }
-  },
-  {
-    "id": 2,
-    "question": "Miket tartalmazzon a P\u00f6tty\u00f6s automata?",
-    "options": [
-      "Klasszikus T\u00far\u00f3 Rudi",
-      "Karamell\u00e1s Guru",
-      "Tejszelet",
-      "Fitness Rudi"
-    ],
-    "isMultiple": true,
-    "createdAt": "2022-12-05",
-    "deadlineAt": "2024-12-13",
-    "answers": {
-      "Klasszikus T\u00far\u00f3 Rudi": 3,
-      "Karamell\u00e1s Guru": 3,
-      "Tejszelet": 3,
-      "Fitness Rudi": 2
+    {
+        "id": 2,
+        "question": "Miket tartalmazzon a P\u00f6tty\u00f6s automata?",
+        "options": [
+            "Klasszikus T\u00far\u00f3 Rudi",
+            "Karamell\u00e1s Guru",
+            "Tejszelet",
+            "Fitness Rudi"
+        ],
+        "isMultiple": true,
+        "createdAt": "2022-12-05",
+        "deadlineAt": "2024-12-13",
+        "answers": {
+            "Klasszikus T\u00far\u00f3 Rudi": 3,
+            "Karamell\u00e1s Guru": 3,
+            "Tejszelet": 3,
+            "Fitness Rudi": 2
+        },
+        "voted": {
+            "1": [
+                "Klasszikus T\u00far\u00f3 Rudi",
+                "Karamell\u00e1s Guru",
+                "Tejszelet",
+                "Fitness Rudi"
+            ],
+            "2": [
+                "Klasszikus T\u00far\u00f3 Rudi",
+                "Karamell\u00e1s Guru",
+                "Tejszelet",
+                "Fitness Rudi"
+            ],
+            "3": [
+                "Klasszikus T\u00far\u00f3 Rudi",
+                "Karamell\u00e1s Guru",
+                "Tejszelet"
+            ]
+        }
     },
-    "voted": {
-      "1": [
-        "Klasszikus T\u00far\u00f3 Rudi",
-        "Karamell\u00e1s Guru",
-        "Tejszelet",
-        "Fitness Rudi"
-      ],
-      "2": [
-        "Klasszikus T\u00far\u00f3 Rudi",
-        "Karamell\u00e1s Guru",
-        "Tejszelet",
-        "Fitness Rudi"
-      ],
-      "3": [
-        "Klasszikus T\u00far\u00f3 Rudi",
-        "Karamell\u00e1s Guru",
-        "Tejszelet"
-      ]
+    {
+        "id": 3,
+        "question": "A harmadik?",
+        "options": [
+            "elso",
+            "kettedik"
+        ],
+        "isMultiple": false,
+        "createdAt": "2023-01-14",
+        "deadlineAt": "2023-01-26",
+        "answers": {
+            "elso": 0,
+            "kettedik": 0
+        }
     }
-  }
 ]
