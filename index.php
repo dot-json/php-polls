@@ -93,15 +93,13 @@
                 <div class="poll-box">
                     <span class="poll-title"><span>#<?=$poll["id"]?> - </span><?=$poll["question"]?></span>
                     <span class="poll-result-title">Eredmény</span>
-                    <?php if (!$poll["isMultiple"]): ?>
-                        <div class="poll-result-container">
-                            <ol class="poll-result-list" type="I">
-                                <?php foreach(sort_answears($poll) as $key => $val): ?>
-                                    <li class="poll-result-entry"><?=$key?> <span style="font-weight: 400;">|</span> <span style="font-weight: 500;"><?=$val?> szavazattal</span></li>
-                                <?php endforeach?>
-                            </ol>
-                        </div>
-                    <?php endif?>     
+                    <div class="poll-result-container">
+                        <ol class="poll-result-list" type="I">
+                            <?php foreach(sort_answears($poll) as $key => $val): ?>
+                                <li class="poll-result-entry"><?=$key?> <span style="font-weight: 400;">|</span> <span style="font-weight: 500;"><?=$val?> szavazattal</span></li>
+                            <?php endforeach?>
+                        </ol>
+                    </div>   
 
                     <?php if (isset($_SESSION["username"]) && $_SESSION["isAdmin"] == true): ?>
                         <form class="poll-form" action="delete-poll.php" method="post" novalidate>
