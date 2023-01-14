@@ -23,7 +23,7 @@
         }
 
         if (count($errors) == 0) {
-            $users = json_decode(file_get_contents("users.json"), true);
+            $users = json_decode(file_get_contents("data/users.json"), true);
             $new_user = [
                 "uid" => end($users)["uid"] + 1,
                 "username" => $username,
@@ -32,7 +32,7 @@
                 "isAdmin" => false
             ];
             array_push($users, $new_user);
-            file_put_contents("users.json", json_encode($users, JSON_PRETTY_PRINT));
+            file_put_contents("data/users.json", json_encode($users, JSON_PRETTY_PRINT));
         }
     }
 ?>

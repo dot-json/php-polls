@@ -1,9 +1,12 @@
 <?php
+    session_start();
+    $pID = $_GET["pollid"] ?? "";
 
     $errors = [];
     if (isset($_POST["submit"])) {
         $username = $_POST["username"] ?? "";
         $password = $_POST["password"] ?? "";
+        $pollid = $_POST["pollid"] ?? "";
 
         if ($username == "") {
             array_push($errors, "nincs felhasználónév!");
@@ -13,12 +16,21 @@
         }
 
         if (count($errors) == 0) {
-            $users = json_decode(file_get_contents("users.json"), true);
+            $users = json_decode(file_get_contents("data/users.json"), true);
             foreach($users as $user){
                 if ($user["username"] == $username && $user["password"] == $password){
-                    //good auth
+                    $_SESSION["username"] = $user["username"];
+                    $_SESSION["password"] = $user["password"];
+                    $_SESSION["isAdmin"] = $user["isAdmin"];
+                    $_SESSION["uid"] = $user["uid"];
+                    if ($pollid != ""){
+                        header("location: poll.php?pollid=$pollid");
+                    } else {
+                        header("location: index.php");
+                    }
                 }
             }
+            array_push($errors, "felhasználó nem létezik!");
         }
     }
 ?>
@@ -50,6 +62,9 @@
             <div class="logreg-box">
                 <span class="logreg-title">Bejelentkezés</span>
                 <form class="form-wrapper" action="login.php" method="post">
+                    <?php if ($pID != ""): ?>
+                        <input type="hidden" name="pollid" value=<?=(int)$pID?>>
+                    <?php endif?>
                     <div class="entry-wrapper">
                         <label class="input-label" for="username">felhasználónév</label>
                         <input class="text-input" type="text" name="username" id="username">

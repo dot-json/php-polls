@@ -15,14 +15,47 @@
   user-select: none;
   margin-bottom: 2rem;
 }
+.divider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+.divider-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -56%);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #01283d;
+  padding: 0.05rem 0.25rem;
+  background-color: #eee;
+}
+.new-poll-button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #01283d;
+  text-decoration: none;
+  padding: 0.7rem;
+  border: 2px solid #01283d;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+.new-poll-button:hover {
+  color: whitesmoke;
+  background-color: #01283d;
+}
 .poll-container {
-  overflow-x: scroll;
   display: flex;
   flex-direction: column;
   width: 100%;
   min-width: 25rem;
   max-width: 38rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0 2rem 0;
+  height: fit-content;
   padding: 1rem;
   gap: 2rem;
 }
@@ -80,13 +113,59 @@
   color: white;
 }
 .poll-button:disabled {
-  color: #01283d80;
-  border: 2px solid #01283d80;
+  color: #01283d9a;
+  border: 2px solid #01283d9a;
 }
 .poll-button:disabled:hover {
   background-color: transparent;
-  color: #01283d80;
+  color: #01283d9a;
   cursor: default;
+}
+.poll-delete-button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 100%;
+  color: #a70000;
+  background-color: transparent;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #a70000;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.poll-delete-button:hover {
+  background-color: #a70000;
+  color: white;
+}
+.poll-result-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #01283d;
+  padding: 0.75rem 0 0.75rem 0.5rem;
+  border-top: 1px solid #01283d;
+  text-transform: uppercase;
+}
+.poll-result-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+.poll-result-container {
+  display: flex;
+  width: 100%;
+  padding-left: 3rem;
+  border-bottom: 1px solid #01283d;
+  padding-bottom: 1rem;
+}
+.poll-result-entry {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-left: 0.2rem;
+  color: #01283d;
 }
 
 @media screen and (max-width: 800px) {

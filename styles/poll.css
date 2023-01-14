@@ -13,6 +13,7 @@
   min-width: 25rem;
   max-width: 45rem;
   padding: 1rem;
+  margin: 2rem 0;
   background-color: whitesmoke;
   border: 2px solid #01283d;
   box-shadow: 6px 6px 0 0 #01283d;
@@ -156,4 +157,103 @@ input[type="checkbox"]:disabled:checked::before {
 .poll-button:hover {
   background-color: #01283d;
   color: white;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.newpoll-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+  padding: 1.5rem 0 1rem 0;
+  gap: 1rem;
+}
+.newpoll-inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.newpoll-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  min-width: 25rem;
+  max-width: 45rem;
+  padding: 0 1rem;
+  margin: 2rem 0;
+  background-color: whitesmoke;
+  border: 2px solid #01283d;
+  box-shadow: 6px 6px 0 0 #01283d;
+}
+.newpoll-question-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0 0 1rem 0;
+  height: fit-content;
+  border-bottom: 1px solid #01283d;
+}
+.newpoll-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.newpoll-id {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #01283d;
+  width: fit-content;
+  white-space: nowrap;
+}
+.newpoll-entry-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.newpoll-input-label {
+  position: absolute;
+  left: 1rem;
+  top: -0.75rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #01283d;
+  background-color: whitesmoke;
+  width: fit-content;
+  padding: 0.05rem 0.25rem;
+  user-select: none;
+}
+.newpoll-question-input {
+  height: 3rem;
+  width: 100%;
+  outline: none;
+  border: 2px solid #01283d;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  color: #01283d;
+  background-color: whitesmoke;
+}
+input[type="date"] {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #01283d;
+  background-color: whitesmoke;
+  width: fit-content;
+  padding: 0 1rem;
+  height: 3rem;
+  border: 2px solid #01283d;
 }
