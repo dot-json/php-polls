@@ -135,16 +135,16 @@
                         <span class="poll-description">*több opció választható</span>
                         <?php foreach($poll["options"] as $option): ?>
                             <div class="poll-option-container">
-                                <input type="checkbox" name=<?=str_replace(' ', '', $option)?> id=<?=str_replace(' ', '', $option)?> value="checked">
-                                <label class="poll-option-label" for=<?=str_replace(' ', '', $option)?>><?=$option?></label>
+                                <input type="checkbox" name='<?=$option?>' id='<?=$option?>' value="checked">
+                                <label class="poll-option-label" for='<?=$option?>'><?=$option?></label>
                             </div>
                         <?php endforeach?>
                     <?php else: ?>
                         <span class="poll-description">*egy opció választható</span>
                         <?php foreach($poll["options"] as $option): ?>
                             <div class="poll-option-container">
-                                <input type="radio" name=result id=<?=str_replace(' ', '', $option)?> value=<?=str_replace(' ', '', $option)?>>
-                                <label class="poll-option-label" for=<?=str_replace(' ', '', $option)?>><?=$option?></label>
+                                <input type="radio" name=result id='<?=$option?>' value='<?=$option?>'>
+                                <label class="poll-option-label" for='<?=$option?>'><?=$option?></label>
                             </div>
                         <?php endforeach?>
                     <?php endif?>
