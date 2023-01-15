@@ -41,4 +41,4 @@ A fegyelmi vétség legsúlyosabb következménye a hallgató elbocsátása az e
 ## Plusz feladatok (plusz 5 pont)
 
 [ ] Admin funkció: a létező felhasználók között az admin csoportokat tud létrehozni, a szavazólap létrehozásánál ezekhez a csoportokhoz egy kattintással hozzá tudja rendelni (3 pont)
-[ ] Admin funkció: Az admin bejelentkezése esetén megjelenik egy plusz gomb a Főoldalon a szavazólapoknál, amiknek a segítségével módosítani tudja a feladatlapokhoz tartozó adatokat, és ezek frissülnek a tárolt adataink között. (2 pont)
+[X] Admin funkció: Az admin bejelentkezése esetén megjelenik egy plusz gomb a Főoldalon a szavazólapoknál, amiknek a segítségével módosítani tudja a feladatlapokhoz tartozó adatokat, és ezek frissülnek a tárolt adataink között. (2 pont)

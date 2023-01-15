@@ -69,7 +69,7 @@
                     </div>
                     <div class="entry-wrapper">
                         <label class="input-label" for="email">e-mail</label>
-                        <input class="text-input" type="text" name="email" id="email">
+                        <input class="text-input" type="email" name="email" id="email">
                     </div>
                     <div class="entry-wrapper">
                         <label class="input-label" for="password">jelszó</label>
